@@ -51,7 +51,7 @@ def qm9_nodes(g, hydrogen=False):
 def qm9_edges(g, e_representation='raw_distance'):
     remove_edges = []
     e={}    
-    for n1, n2, d in g.edges_iter(data=True):
+    for n1, n2, d in g.edges(data=True):
         e_t = []
         # Raw distance function
         if e_representation == 'chem_graph':

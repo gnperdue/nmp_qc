@@ -44,7 +44,7 @@ class GREC(data.Dataset):
 
     def edge_transform(self, g):
         e = {}
-        for n1, n2, d in g.edges_iter(data=True):
+        for n1, n2, d in g.edges(data=True):
             e_t = []
             e_t += [float(x) for x in list(d.values())]
             e[(n1, n2)] = e_t
