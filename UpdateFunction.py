@@ -219,7 +219,7 @@ if __name__ == '__main__':
     g, h_t, e = g_tuple
 
     h_t1 = {}
-    for v in g.nodes_iter():
+    for v in g.nodes():
         neigh = g.neighbors(v)
         m_neigh = dtype()
         for w in neigh:

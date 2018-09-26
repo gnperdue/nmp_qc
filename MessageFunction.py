@@ -255,7 +255,7 @@ if __name__ == '__main__':
     g, h_t, e = g_tuple
 
     m_t = {}
-    for v in g.nodes_iter():
+    for v in g.nodes():
         neigh = g.neighbors(v)
         m_neigh = type(h_t)
         for w in neigh:

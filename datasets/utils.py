@@ -25,7 +25,7 @@ __email__ = "priba@cvc.uab.cat, adutta@cvc.uab.cat"
 
 def qm9_nodes(g, hydrogen=False):
     h = []
-    for n, d in g.nodes_iter(data=True):
+    for n, d in g.nodes(data=True):
         h_t = []
         # Atom type (One-hot H, C, N, O F)
         h_t += [int(d['a_type'] == x) for x in ['H', 'C', 'N', 'O', 'F']]

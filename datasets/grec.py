@@ -36,7 +36,7 @@ class GREC(data.Dataset):
 
     def vertex_transform(self, g):
         h = []
-        for n, d in g.nodes_iter(data=True):
+        for n, d in g.nodes(data=True):
             h_t = []
             h_t += [float(x) for x in d['labels']]
             h.append(h_t)

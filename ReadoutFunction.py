@@ -250,7 +250,7 @@ if __name__ == '__main__':
     # Layer
     t = 1
     h.append({})
-    for v in g.nodes_iter():
+    for v in g.nodes():
         neigh = g.neighbors(v)
         m_neigh = dtype()
         for w in neigh:
